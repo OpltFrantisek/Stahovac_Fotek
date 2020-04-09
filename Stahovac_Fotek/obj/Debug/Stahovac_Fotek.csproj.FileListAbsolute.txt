@@ -1,0 +1,15 @@
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.csprojAssemblyReference.cache
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\MainWindow.g.cs
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\App.g.cs
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek_MarkupCompile.cache
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek_MarkupCompile.lref
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\bin\Debug\Stahovac_Fotek.exe.config
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\bin\Debug\Stahovac_Fotek.exe
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\bin\Debug\Stahovac_Fotek.pdb
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\MainWindow.baml
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.g.resources
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.Properties.Resources.resources
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.csproj.GenerateResource.cache
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.csproj.CoreCompileInputs.cache
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.exe
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Debug\Stahovac_Fotek.pdb
