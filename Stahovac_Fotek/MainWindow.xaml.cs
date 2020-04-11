@@ -24,15 +24,21 @@ namespace Stahovac_Fotek
     {
         static string source;
         static string dest;
+        static bool deleteXml = false;
+        static event EventHandler Progress;
+        public delegate void UpdateProgress(double progress);
         public MainWindow()
         {
             InitializeComponent();
+            p_bar.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             source = source_url.Text;
             dest = dest_url.Text;
+            p_bar.Visibility = Visibility.Visible;
+            p_bar.Foreground = Brushes.Green;
             new Thread(() =>
             {
                 Thread.CurrentThread.IsBackground = true;
@@ -41,13 +47,27 @@ namespace Stahovac_Fotek
                     var data = ImageFinder.FindInXml(new StreamReader(dest + @"\Data.xml"));
                     if (data.Count > 0)
                     {
-                        foreach (var img in data)
-                            FileDownloader.DownloadFile(img, dest);
-                    }
-                }             
-            }).Start();
-            
+                        for (int i = 0; i < data.Count; i++)
+                        {
+                            FileDownloader.DownloadFile(data[i], dest);
+                            p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Value = i / (data.Count / 100.0)));
 
+                        }
+                        p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Foreground = Brushes.GreenYellow ));
+                    }
+                }
+            }).Start();
+
+
+        }
+        public void UpdateInfo(double progress)
+        {
+            p_bar.Value = progress;
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+           // deleteXml = (bool)check_box.IsChecked;
         }
     }
 

@@ -12,4 +12,8 @@ C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fote
 C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.csproj.CoreCompileInputs.cache
 C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.exe
 C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.pdb
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\bin\Release\Stahovac_Fotek.exe.manifest
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\bin\Release\Stahovac_Fotek.application
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.exe.manifest
+C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.application
 C:\Users\Fafik\source\repos\ConsoleApp1\Stahovac_Fotek\obj\Release\Stahovac_Fotek.csprojAssemblyReference.cache

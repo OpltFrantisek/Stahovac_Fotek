@@ -7,21 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="295.025" Width="800">
     <Grid Background="#FFBDBDBD" Margin="0,0,0,1">
-        <Label Content="Adresa k XML" HorizontalAlignment="Left" Margin="42,63,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
-        <Label Content="Fotky" HorizontalAlignment="Left" Margin="42,134,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
-        <Button Content="Čaruj" HorizontalAlignment="Left" Margin="599,218,0,0" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.5,0.5" Height="41" FontSize="16" Click="Button_Click">
+        <Label Content="Adresa k XML" HorizontalAlignment="Left" Margin="36,31,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
+        <Label Content="Fotky" HorizontalAlignment="Left" Margin="42,76,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
+        <Button Content="Stahnout" HorizontalAlignment="Left" Margin="604,215,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.5,0.5" Height="38" FontSize="16" Click="Button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="0.766"/>
+                    
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <CheckBox Content="Smazat XML po stažení obrázků" HorizontalAlignment="Left" Margin="186,195,0,0" VerticalAlignment="Top" Height="24" Width="255" FontSize="16"/>
-        <TextBox Name="dest_url" HorizontalAlignment="Left" Height="34" Margin="181,134,0,95" TextWrapping="Wrap" Text="F:\pokus"  VerticalAlignment="Center" Width="572" FontSize="14"/>
-        <TextBox x:Name="source_url" HorizontalAlignment="Left" Height="34" Margin="181,63,0,166" TextWrapping="Wrap" Text="www.energy-tabor.cz/heureka/export/products.xml"  VerticalAlignment="Center" Width="572" FontSize="14"/>
+        <TextBox Name="dest_url" HorizontalAlignment="Left" Height="34" Margin="175,76,0,153" TextWrapping="Wrap" Text="F:\pokus"  VerticalAlignment="Center" Width="572" FontSize="14"/>
+        <TextBox x:Name="source_url" HorizontalAlignment="Left" Height="34" Margin="175,31,0,198" TextWrapping="Wrap" Text="www.energy-tabor.cz/heureka/export/products.xml"  VerticalAlignment="Center" Width="572" FontSize="14"/>
+        <ProgressBar x:Name="p_bar" HorizontalAlignment="Left" Height="25" Margin="10,170,0,0" VerticalAlignment="Top" Width="772"/>
 
     </Grid>
 </Window>
