@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.Diagnostics;
+
 namespace Stahovac_Fotek
 {
     /// <summary>
@@ -53,9 +55,11 @@ namespace Stahovac_Fotek
                                 p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Value = i / (data.Count / 100.0)));                               
                             }
                             p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Foreground = Brushes.GreenYellow));
-                            MessageBoxResult result = MessageBox.Show(string.Format("Hotovo úspěšné staženo {0} z {1} nalezených obrázků.",ok,data.Count),
+                            MessageBoxResult result = MessageBox.Show(string.Format("Hotovo úspěšné staženo {0} z {1} nalezených obrázků.\nChceš je zobrazit ?",ok,data.Count),
                                         "Jupíííí",
-                                        MessageBoxButton.OK);
+                                        MessageBoxButton.YesNo);
+                            if(result == MessageBoxResult.Yes)
+                                Process.Start("explorer.exe", dest);
                         }
                     }
                     else
@@ -74,6 +78,11 @@ namespace Stahovac_Fotek
                                           MessageBoxButton.OK);
             }                
         }
+        /// <summary>
+        /// Medota pro vyvolání nabídky pro výběr složky
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var dialog = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();

@@ -18,14 +18,12 @@ namespace Stahovac_Fotek
                 
             }
             return true;
-
         }
         public static bool DownloadFile(string source_url, string dest_url)
         {
             string name = System.IO.Path.GetFileName(source_url);
             using (WebClient client = new WebClient())
             {
-
                 try
                 {
                     client.DownloadFile(source_url, dest_url + @"\" + name);
@@ -33,8 +31,7 @@ namespace Stahovac_Fotek
                 catch
                 {
                     return false;
-                }
-               
+                }              
             }
             return true;
         }

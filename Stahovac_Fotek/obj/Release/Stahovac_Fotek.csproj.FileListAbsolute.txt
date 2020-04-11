@@ -38,3 +38,4 @@ F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.a
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.csproj.CopyComplete
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.exe
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.pdb
+F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.csprojAssemblyReference.cache
