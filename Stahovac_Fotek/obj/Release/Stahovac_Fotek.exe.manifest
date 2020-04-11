@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stahovac_Fotek.exe" size="13280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ookii.Dialogs.Wpf.dll" size="107696">
+      <assemblyIdentity name="Ookii.Dialogs.Wpf" version="1.0.0.0" publicKeyToken="0C15020868FD6249" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BLjLVf9IGk9PmmC8PF4G7XjBKoZ3whFiHtz52EZ72CM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stahovac_Fotek.exe" size="13792">
       <assemblyIdentity name="Stahovac_Fotek" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CMOhT3LJasGcgncdmI/p7ZLd8Nb1hVhZlk/tBx3lG1M=</dsig:DigestValue>
+        <dsig:DigestValue>Z5nP3kZ+VU7EFpj3snZlUe5mdzWgjEvLgLCgxQLyBsw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

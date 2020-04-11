@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="295.025" Width="800">
     <Grid Background="#FFBDBDBD" Margin="0,0,0,1">
-        <Label Content="Adresa k XML" HorizontalAlignment="Left" Margin="36,31,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
-        <Label Content="Fotky" HorizontalAlignment="Left" Margin="42,76,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
+        <Label Content="Adresa k XML" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
+        <Label Content="Fotky" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Height="34" Width="139" FontSize="16"/>
         <Button Content="Stahnout" HorizontalAlignment="Left" Margin="604,215,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.5,0.5" Height="38" FontSize="16" Click="Button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -19,9 +19,12 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <TextBox Name="dest_url" HorizontalAlignment="Left" Height="34" Margin="175,76,0,153" TextWrapping="Wrap" Text="F:\pokus"  VerticalAlignment="Center" Width="572" FontSize="14"/>
-        <TextBox x:Name="source_url" HorizontalAlignment="Left" Height="34" Margin="175,31,0,198" TextWrapping="Wrap" Text="www.energy-tabor.cz/heureka/export/products.xml"  VerticalAlignment="Center" Width="572" FontSize="14"/>
+        <TextBox Name="dest_url" HorizontalAlignment="Left" Height="34" Margin="119,76,0,153" TextWrapping="Wrap" Text="F:\pokus"  VerticalAlignment="Center" Width="518" FontSize="14"/>
+        <TextBox x:Name="source_url" HorizontalAlignment="Left" Height="34" Margin="119,31,0,198" TextWrapping="Wrap" Text="www.energy-tabor.cz/heureka/export/products.xml"  VerticalAlignment="Center" Width="518" FontSize="14"/>
         <ProgressBar x:Name="p_bar" HorizontalAlignment="Left" Height="25" Margin="10,170,0,0" VerticalAlignment="Top" Width="772"/>
+        <Button Content="Vybrat" HorizontalAlignment="Left" Margin="642,76,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.5,0.5" Height="34" FontSize="16" Click="Button_Click_1">
+
+        </Button>
 
     </Grid>
 </Window>

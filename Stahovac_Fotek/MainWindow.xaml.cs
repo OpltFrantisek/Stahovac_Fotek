@@ -39,24 +39,47 @@ namespace Stahovac_Fotek
             dest = dest_url.Text;
             p_bar.Visibility = Visibility.Visible;
             p_bar.Foreground = Brushes.Green;
-            new Thread(() =>
+            if (Directory.Exists(dest))
             {
-                Thread.CurrentThread.IsBackground = true;
-                if (FileDownloader.DownloadFile(source, dest, "Data.xml"))
+                new Thread(() =>
                 {
-                    var data = ImageFinder.FindInXml(new StreamReader(dest + @"\Data.xml"));
-                    if (data.Count > 0)
+                    int ok = 0;
+                    Thread.CurrentThread.IsBackground = true;
+                    if (FileDownloader.DownloadFile(source, dest, "Data.xml"))
                     {
-                        for (int i = 0; i < data.Count; i++)
+                        var data = ImageFinder.FindInXml(new StreamReader(dest + @"\Data.xml"));
+                        if (data.Count > 0)
                         {
-                            FileDownloader.DownloadFile(data[i], dest);
-                            p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Value = i / (data.Count / 100.0)));
-
+                            for (int i = 0; i < data.Count; i++)
+                            {
+                                if (FileDownloader.DownloadFile(data[i], dest))
+                                {
+                                    ok++;
+                                }                                                     
+                                p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Value = i / (data.Count / 100.0)));                               
+                            }
+                            p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Foreground = Brushes.GreenYellow));
+                            MessageBoxResult result = MessageBox.Show(string.Format("Hotovo úspěšné staženo {0} z {1} nalezených obrázků.",ok,data.Count),
+                                        "Jupíííí",
+                                        MessageBoxButton.OK);
                         }
-                        p_bar.Dispatcher.BeginInvoke((Action)(() => p_bar.Foreground = Brushes.GreenYellow ));
                     }
-                }
-            }).Start();
+                    else
+                    {
+                        MessageBoxResult result = MessageBox.Show("Nedaří se stáhnout XML soubor. Zkontroluj cestu",
+                                         "Ups",
+                                         MessageBoxButton.OK);
+
+                    }
+                }).Start();
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Špatně zadana cesta pro ukládání fotek. Pro naformátovnátí C:\\ stistkněte OK",
+                                          "Ups",
+                                          MessageBoxButton.OK);
+            }
+                
 
 
         }
@@ -69,6 +92,15 @@ namespace Stahovac_Fotek
         {
            // deleteXml = (bool)check_box.IsChecked;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
+            if (dialog.ShowDialog(this).GetValueOrDefault())
+            {
+                 dest_url.Text = dialog.SelectedPath;
+            }
+        }
     }
 
     public class FileDownloader
@@ -77,7 +109,15 @@ namespace Stahovac_Fotek
         {
             using (WebClient client = new WebClient())
             {
-                client.DownloadFile("http://" + source_url, dest_url + @"\" + name);
+                try
+                {
+                    client.DownloadFile("http://" + source_url, dest_url + @"\" + name);
+                }
+                catch
+                {
+                    return false;
+                }
+                
             }
             return true;
 
@@ -87,7 +127,16 @@ namespace Stahovac_Fotek
             string name = System.IO.Path.GetFileName(source_url);
             using (WebClient client = new WebClient())
             {
-                client.DownloadFile(source_url, dest_url + @"\" + name);
+
+                try
+                {
+                    client.DownloadFile(source_url, dest_url + @"\" + name);
+                }
+                catch
+                {
+                    return false;
+                }
+               
             }
             return true;
         }
