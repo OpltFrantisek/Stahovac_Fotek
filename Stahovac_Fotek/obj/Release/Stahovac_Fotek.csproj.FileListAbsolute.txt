@@ -24,7 +24,6 @@ F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\bin\Release\Stahovac_Fotek.e
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\bin\Release\Stahovac_Fotek.pdb
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\bin\Release\Ookii.Dialogs.Wpf.dll
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\bin\Release\Ookii.Dialogs.Wpf.xml
-F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek.csprojAssemblyReference.cache
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\MainWindow.g.cs
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\App.g.cs
 F:\Fafik\Documents\sf\Stahovac_Fotek\Stahovac_Fotek\obj\Release\Stahovac_Fotek_MarkupCompile.cache

@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stahovac_Fotek.exe" size="13792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stahovac_Fotek.exe" size="14304">
       <assemblyIdentity name="Stahovac_Fotek" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z5nP3kZ+VU7EFpj3snZlUe5mdzWgjEvLgLCgxQLyBsw=</dsig:DigestValue>
+        <dsig:DigestValue>+pfSwXR/nrY1gpkqHRTZ1peBM/a80M+aflocuf/plJU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
